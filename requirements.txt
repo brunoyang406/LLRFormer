@@ -1,0 +1,34 @@
+# Core deep learning frameworks
+torch>=1.7.0
+torchvision>=0.8.0
+
+# Numerical computing
+numpy>=1.19.0
+scipy
+
+# Image processing
+opencv-python==3.4.1.15
+Pillow>=7.0.0
+scikit-image
+albumentations>=0.5.0
+
+# Configuration and utilities
+EasyDict==1.7
+pyyaml
+yacs>=0.1.5
+json_tricks
+
+# Data handling
+pandas
+shapely==1.6.4
+
+# Visualization
+matplotlib>=3.3.0
+
+# Model and training utilities
+tensorboardX==1.6
+einops==0.3.0
+timm==0.4.9
+
+# Build tools
+Cython
