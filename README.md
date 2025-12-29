@@ -187,7 +187,6 @@ The model is evaluated using the following metrics:
 
 - **PCK@0.02**: Percentage of Correct Keypoints with threshold 0.02
 - **AUC**: Area Under Curve
-- **MPJPE**: Mean Per Joint Position Error
 
 
 ## Dataset Statistics
@@ -197,12 +196,21 @@ The model is evaluated using the following metrics:
 - **Test set**: 200 images
 - **Number of keypoints**: 36
 
-## Development Tools
+### Visualization Tools
 
-The project also includes the following utility tools:
+The `visualization/` directory contains three visualization scripts:
 
-- `tools/export_predictions.py`: Export prediction results
-- `visualization/`: Attention visualization and keypoint visualization tools
+- **`attention_vis_keypoint_attention_layers.py`**: Visualizes cross-keypoint attention matrices across all 6 transformer layers. Output: `attention_vis/cross_keypoint_attention_layers.png`
+
+- **`attention_visualize.py`**: Comprehensive attention visualization including cross-keypoint attention, keypoint-to-image attention maps, and symmetry analysis. Output: `attention_vis/cross_keypoint_attention_layers.jpg` and keypoint-to-image attention maps.
+
+- **`plot_keypoint_token_similarity.py`**: Visualizes keypoint token embedding similarity as a heatmap matrix. Output: `attention_vis/keypoint_token_similarity.png`
+
+**Usage:**
+```bash
+cd visualization
+python <script_name>.py
+```
 
 ## License
 
