@@ -4,6 +4,9 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.7+-orange.svg)](https://pytorch.org/)
 
 **LLRFormer** (Lower Limb Radiographs Automatic Landmark Detection and Alignment Measurements via Transformer) is a Transformer-based keypoint detection model for full-length lower limb radiographs. The model combines HRNet backbone with cross-self attention mechanism, specifically designed for medical image keypoint detection tasks.
+## Visualization Example
+
+![Figure1 示例](https://raw.githubusercontent.com/brunoyang406/LLRFormer/main/figure1.jpg)
 
 ## Features
 
